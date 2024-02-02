@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Git基本操作：
+## Git基本操作：
 
 ##### 提交修改：
 

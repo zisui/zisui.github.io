@@ -37,7 +37,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans','en'],
+    locales: ['zh-Hans'],
   },
 
   presets: [
@@ -61,9 +61,36 @@ const config = {
       }),
     ],
   ],
+  themes: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        indexPages: true,
+        hashed: true,
+        language: ['zh'],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light', // 默认白昼主题，可配置dark模式
+      },
+      docs: {
+        sidebar: {                             // 侧边栏
+          hideable: true,
+        },
+      },
+      // announcementBar: {                       // 顶部公告配置
+      //   id: 'notice',
+      //   content: '滚动的公告～',
+      //   backgroundColor: '#2160fd',
+      //   textColor: '#ffffff',
+      //   isCloseable: true,
+      // },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'My Site',
@@ -98,7 +125,7 @@ const config = {
               // },
               {
                 label: 'docusaurus',
-              href: 'https://docusaurus.io/zh-CN',
+                href: 'https://docusaurus.io/zh-CN',
               }
             ],
           },
