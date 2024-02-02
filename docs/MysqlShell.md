@@ -45,33 +45,3 @@ desc table_name;
 ```mysql
 alter table tab_name rename to new_tab_name; 
 ```
-
-yarn config set registry https://registry.npmmirror.com -g
-
-yarn config set sass_binary_site https://cdn.npmmirror.com/dist/node-sass -g
-
-
-
-
-
- url: 'https://zisui.github.io',
-
- baseUrl: '/zisui.github.io/',
-
- onBrokenLinks: 'throw',
-
- onBrokenMarkdownLinks: 'warn',
-
-
-
- // GitHub pages deployment config.
-
- // If you aren't using GitHub pages, you don't need these.
-
- organizationName: 'zisui', // Usually your GitHub org/user name.
-
- projectName: 'zisui.github.io', // Usually your repo name.
-
- deploymentBranch: 'docusaurus',
-
- trailingSlash: false,
