@@ -37,7 +37,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans'],
+    locales: ['zh-Hans','en'],
   },
 
   presets: [
@@ -47,15 +47,11 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/zisui/zisui.github.io',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/zisui/zisui.github.io',
         },
@@ -68,7 +64,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'My Site',
@@ -101,6 +96,10 @@ const config = {
               //   label: 'Tutorial',
               //   to: '/docs/intro',
               // },
+              {
+                label: 'docusaurus',
+              href: 'https://docusaurus.io/zh-CN',
+              }
             ],
           },
           {
