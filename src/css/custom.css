@@ -15,6 +15,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -34,6 +35,10 @@
   content: "";
   display: flex;
   height: 24px;
-  mask-image: url(/static/img/github.svg);
   width: 24px;
+  mask-image: url(/static/img/github.svg);
+}
+
+.header-github-link:hover:before {
+  background-color: var(--ifm-navbar-link-hover-color);
 }

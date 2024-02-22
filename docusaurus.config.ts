@@ -39,13 +39,13 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/zisui/zisui.github.io',
+          editUrl: 'https://github.com/zisui/zisui.github.io/blob/master/', // 地址无效
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/zisui/zisui.github.io',
+          editUrl: 'https://github.com/zisui/zisui.github.io/blob/master/', // 地址无效
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -66,6 +66,7 @@ const config: Config = {
     ],
   ],
   themeConfig: {
+    editUrl: 'https://github.com/zisui/zisui.github.io/blob/master/', //编辑页面 地址
     colorMode: {
       defaultMode: 'light', // 默认白昼主题，可配置dark模式
     },
@@ -99,7 +100,7 @@ const config: Config = {
         },
         { to: '/blog', label: '博客', position: 'left' },
         {
-          href: 'https://github.com/zisui/zisui.github.io',
+          href: 'https://github.com/zisui',
           position: 'right',
           'aria-label': 'GitHub repository',
           className: 'header-github-link',
