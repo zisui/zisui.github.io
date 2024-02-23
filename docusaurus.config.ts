@@ -39,13 +39,13 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/zisui/zisui.github.io/blob/master/', // 地址无效
+          editUrl: 'https://github.com/zisui/zisui.github.io', // 地址无效
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/zisui/zisui.github.io/blob/master/', // 地址无效
+          editUrl: 'https://github.com/zisui/zisui.github.io', // 地址无效
         },
         theme: {
           customCss: './src/css/custom.css',
